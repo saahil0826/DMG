@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 class MainComponent extends Component {
     constructor(props){
@@ -13,6 +14,13 @@ class MainComponent extends Component {
 
     render(){
         return(
+
+            // <BrowserRouter>
+            //     <Switch>
+            //         <Route path = '/' component = {(props) => <Component {...props}/>}/>
+            //     </Switch>
+            // </BrowserRouter>
+            
             <div className='container-fluid'>
                 Working
             </div>
