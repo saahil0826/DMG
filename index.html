@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title>Tyres Inc</title>
+      <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./reset.css" />
+  <link rel="stylesheet" href="./responsive.css" />
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
@@ -82,8 +83,59 @@
       </div>
 
       <div class="content">
-        <div class="main">
+        <div class="main lg">
           <div class="img">
+            <div class="z-index" id="prem">
+              <span>Premium Bestseller</span>
+            </div>
+            <img src="./resources/tyre.jpg" alt="tyre" id="main-img" />
+          </div>
+          <div class="info">
+
+            <div class="container">
+              <div class="heading">
+                <h1>Continental - Contiecocontact 5</h1>
+              </div>
+              <div class="details">
+                <div class="approved">
+                  <img src="./resources/approved.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <span>205/55 R16 H</span>
+                  <span>SUV</span>
+                </div>
+                <div class="text">
+                  <div class="icon">
+                    <span>Stock </span>
+                    <img src="./resources/green.png" alt="" />
+                  </div>
+                  <span>Price ₪340</span>
+                </div>
+                <div class="text">
+                  <span>Total</span>
+                  <span class="bold">₪1360</span>
+                </div>
+              </div>
+              <div class="quantity">
+                <div class="counter">
+                  <span class="incre">-</span>
+                  <span class="number">4</span>
+                  <span class="incre">+</span>
+                </div>
+
+                <div class="adc">
+                  <img src="./resources/adc.png" id="adc" alt="" />
+                  <span>Add to cart</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main lg">
+          <div class="img">
+            <div class="z-index" id="econ">
+              <span>Economy Bestseller</span>
+            </div>
             <img src="./resources/tyre.jpg" alt="tyre" id="main-img" />
           </div>
           <div class="info">
@@ -126,55 +178,111 @@
             </div>
           </div>
         </div>
-        <div class="main">
-          <div class="img">
-            <img src="./resources/tyre.jpg" alt="tyre" id="main-img" />
-          </div>
-          <div class="info">
-            <div class="container">
-              <div class="heading">
-                <h1>Continental - Contiecocontact 5</h1>
-              </div>
-              <div class="details">
-                <div class="approved">
-                  <img src="./resources/approved.jpg" alt="" />
-                </div>
-                <div class="text">
-                  <span>205/55 R16 H</span>
-                  <span>SUV</span>
-                </div>
-                <div class="text">
-                  <div class="icon">
-                    <span>Stock </span>
-                    <img src="./resources/green.png" alt="" />
-                  </div>
-                  <span>Price ₪340</span>
-                </div>
-                <div class="text">
-                  <span>Total</span>
-                  <span class="bold">₪1360</span>
-                </div>
-              </div>
-              <div class="quantity">
-                <div class="counter">
-                  <span class="incre">-</span>
-                  <span class="number">4</span>
-                  <span class="incre">+</span>
-                </div>
 
-                <div class="adc">
-                  <img src="./resources/adc.png" id="adc" alt="" />
-                  <span>Add to cart</span>
+        <div class="main sm">
+          <div class="up">
+            <div class="left">
+              <div class="img">
+                <div class="z-index" id="prem">
+                  <span>Premium Bestseller</span>
                 </div>
+                <img src="./resources/tyre.jpg" alt="tyre" id="main-img" />
               </div>
             </div>
+            <div class="right">
+              <div class="heading">
+                <h1>Continental PremiumContact™ 6</h1>
+              </div>
+                <div class="details">
+                  <div class="approved">
+                    <img src="./resources/approved.jpg" alt="" />
+                  </div>
+                  <div class="text">
+                    <span>205/55 R16 H</span>
+                    <span>SUV</span>
+                  </div>
+                  </div>
+                  <div class="info">
+                    <div class="icon">
+                      <span>Stock   <img src="./resources/green.png" alt="" /></span>
+                    </div>
+                    <div class="text">
+                      <span>Price ₪340</span>
+                    </div>
+                    <div class="text">
+                      <span class="bold"> Total ₪1360</span>
+                    </div>
+                  </div>
+            </div>
           </div>
-        </div>
+          <div class="quantity">
+            <div class="counter">
+              <span class="incre">-</span>
+              <span class="number">4</span>
+              <span class="incre">+</span>
+            </div>
+
+            <div class="adc">
+              <img src="./resources/adc.png" id="adc" alt="" />
+              <span>Add to cart</span>
+            </div>
+          </div>
+          </div>
+          <div class="main sm">
+            <div class="up">
+              <div class="left">
+                <div class="img">
+                  <div class="z-index" id="econ">
+                    <span>Economy Bestseller</span>
+                  </div>
+                  <img src="./resources/tyre.jpg" alt="tyre" id="main-img" />
+                </div>
+              </div>
+              <div class="right">
+                <div class="heading">
+                  <h1>Continental PremiumContact™ 6 </h1>
+                </div>
+                  <div class="details">
+                    <div class="approved">
+                      <img src="./resources/approved.jpg" alt="" />
+                    </div>
+                    <div class="text">
+                      <span>205/55 R16 H</span>
+                      <span>SUV</span>
+                    </div>
+                    </div>
+                    <div class="info">
+                      <div class="icon">
+                        <span>Stock   <img src="./resources/green.png" alt="" /></span>
+                      </div>
+                      <div class="text">
+                        <span>Price ₪340</span>
+                      </div>
+                      <div class="text">
+                        <span class="bold"> Total ₪1360</span>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <div class="quantity">
+              <div class="counter">
+                <span class="incre">-</span>
+                <span class="number">4</span>
+                <span class="incre">+</span>
+              </div>
+
+              <div class="adc">
+                <img src="./resources/adc.png" id="adc" alt="" />
+                <span>Add to cart</span>
+              </div>
+            </div>
+            </div>
+
       </div>
       <div class="row-container">
         <div class="rows lg">
           <div class="name">
-            <h1>Continental - Contiecocontact 6</h1>
+            <h1>Continental PremiumContact™ 6</h1>
           </div>
           <div class="text">
             <img src="./resources/approved.jpg" alt="" />
@@ -209,7 +317,7 @@
         </div>
         <div class="rows lg">
           <div class="name">
-            <h1>Continental - Contiecocontact 6</h1>
+            <h1>Continental PremiumContact™ 6</h1>
           </div>
           <div class="text">
             <img src="./resources/approved.jpg" alt="" />
@@ -243,7 +351,7 @@
         </div>
         <div class="rows lg">
           <div class="name">
-            <h1>Continental - Contiecocontact 6</h1>
+            <h1>Continental PremiumContact™ 6</h1>
           </div>
           <div class="text">
             <img src="./resources/approved.jpg" alt="" />
@@ -270,7 +378,7 @@
           <div class="text">
             <p>Total <span class="bold">₪1360</span></p>
           </div>
-          <div class="adc" id="icononly">
+          <div class="adc notify" id="icononly">
             <img src="./resources/reminder.png" id="rem" alt="" />
             <span>Notify Me!</span>
           </div>
@@ -281,7 +389,7 @@
           <div class="row-divider">
             <div class="first-row">
               <div class="name">
-                <h1>Continental - Contiecocontact 6</h1>
+                <h1>Continental PremiumContact™ 6</h1>
               </div>
               <div class="text">
                 <span>195/55 R15 85V</span>
@@ -310,7 +418,7 @@
             <div class="third-row">
               <div class="counter" id="main">
                 <span class="incre">-</span>
-                <span class="number">4</span>
+                <span class="number">8</span>
                 <span class="incre">+</span>
               </div>
               <div class="adc" id="icononly">
@@ -324,7 +432,7 @@
           <div class="row-divider">
             <div class="first-row">
               <div class="name">
-                <h1>Continental - Contiecocontact 6</h1>
+                <h1>Continental PremiumContact™ 6</h1>
               </div>
               <div class="text">
                 <span>195/55 R15 85V</span>
@@ -353,7 +461,7 @@
             <div class="third-row">
               <div class="counter" id="main">
                 <span class="incre">-</span>
-                <span class="number">4</span>
+                <span class="number">8</span>
                 <span class="incre">+</span>
               </div>
               <div class="adc" id="icononly">
@@ -369,7 +477,7 @@
           <div class="row-divider">
             <div class="first-row">
               <div class="name">
-                <h1>Continental - Contiecocontact 6</h1>
+                <h1>Continental PremiumContact™ 6</h1>
               </div>
               <div class="text">
                 <span>195/55 R15 85V</span>
@@ -398,7 +506,7 @@
             <div class="third-row">
               <div class="counter" id="main">
                 <span class="incre">-</span>
-                <span class="number">4</span>
+                <span class="number">8</span>
                 <span class="incre">+</span>
               </div>
               <div class="adc" id="icononly">
@@ -412,7 +520,7 @@
           <div class="row-divider">
             <div class="first-row">
               <div class="name">
-                <h1>Continental - Contiecocontact 6</h1>
+                <h1>Continental PremiumContact™ 6</h1>
               </div>
               <div class="text">
                 <span>195/55 R15 85V</span>
@@ -441,7 +549,7 @@
             <div class="third-row">
               <div class="counter" id="main">
                 <span class="incre">-</span>
-                <span class="number">4</span>
+                <span class="number">8</span>
                 <span class="incre">+</span>
               </div>
               <div class="adc" id="icononly">
@@ -457,7 +565,7 @@
           <div class="row-divider">
             <div class="first-row">
               <div class="name">
-                <h1>Continental - Contiecocontact 6</h1>
+                <h1>Continental PremiumContact™ 6</h1>
               </div>
               <div class="text">
                 <span>195/55 R15 85V</span>
@@ -486,7 +594,7 @@
             <div class="third-row">
               <div class="counter" id="main">
                 <span class="incre">-</span>
-                <span class="number">4</span>
+                <span class="number">8</span>
                 <span class="incre">+</span>
               </div>
               <div class="adc" id="icononly">
@@ -500,7 +608,7 @@
           <div class="row-divider">
             <div class="first-row">
               <div class="name">
-                <h1>Continental - Contiecocontact 6</h1>
+                <h1>Continental PremiumContact™ 6</h1>
               </div>
               <div class="text">
                 <span>195/55 R15 85V</span>
@@ -529,7 +637,7 @@
             <div class="third-row">
               <div class="counter" id="main">
                 <span class="incre">-</span>
-                <span class="number">4</span>
+                <span class="number">8</span>
                 <span class="incre">+</span>
               </div>
               <div class="adc" id="icononly">
@@ -545,7 +653,7 @@
           <div class="row-divider">
             <div class="first-row">
               <div class="name">
-                <h1>Continental - Contiecocontact 6</h1>
+                <h1>Continental PremiumContact™ 6</h1>
               </div>
               <div class="text">
                 <span>195/55 R15 85V</span>
@@ -574,7 +682,7 @@
             <div class="third-row">
               <div class="counter" id="main">
                 <span class="incre">-</span>
-                <span class="number">4</span>
+                <span class="number">8</span>
                 <span class="incre">+</span>
               </div>
               <div class="adc" id="icononly">
@@ -588,7 +696,7 @@
           <div class="row-divider">
             <div class="first-row">
               <div class="name">
-                <h1>Continental - Contiecocontact 6</h1>
+                <h1>Continental PremiumContact™ 6</h1>
               </div>
               <div class="text">
                 <span>195/55 R15 85V</span>
@@ -617,7 +725,7 @@
             <div class="third-row">
               <div class="counter" id="main">
                 <span class="incre">-</span>
-                <span class="number">4</span>
+                <span class="number">8</span>
                 <span class="incre">+</span>
               </div>
               <div class="adc" id="icononly">
