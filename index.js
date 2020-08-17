@@ -10,7 +10,6 @@ $(document).ready(function() {
   });
 });
 
-
 $(document).ready(function() {
   $("#trigger1").click(function(event) {
     event.stopPropagation();
