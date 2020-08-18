@@ -1,31 +1,17 @@
-import React, {Component} from 'react'
-import axios from 'axios';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React from 'react';
+import Home from './HomeComponent';
+import Header from './HeaderComponent';
 
-class MainComponent extends Component {
-    constructor(props){
-        super(props)
-        this.state = {
-            url : window.location.hostname
-        }
-    }
 
-    componentDidMount(){}
-
+class Main extends React.Component{
     render(){
         return(
-
-            // <BrowserRouter>
-            //     <Switch>
-            //         <Route path = '/' component = {(props) => <Component {...props}/>}/>
-            //     </Switch>
-            // </BrowserRouter>
-            
-            <div className='container-fluid'>
-                Working
-            </div>
-        );
+            <React.Fragment>
+                <Header/>
+                <Home/>
+            </React.Fragment>
+        )
     }
 }
 
-export default MainComponent;
+export default Main;

@@ -1,13 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css'; 
+import './style.css';
+import './reset.css';
 import MainComponent from './Components/MainComponent';
 
 function App() {
   return (
-    <div className="App">
-      <MainComponent/>
-    </div>
+    <MainComponent/>
   );
 }
 
