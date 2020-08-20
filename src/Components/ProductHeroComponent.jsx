@@ -1,54 +1,53 @@
 import React, { Component } from 'react'
 import withCounter from './withCounter';
 
-const ProductHero = () => {
-    return (
-        
-            <div class="main">
-                <div class="img">
-                    <img src="./tyre.jpg" alt="tyre" id="main-img" />
-                </div>
-                <div class="info">
-                    <div class="container">
-                        <div class="heading">
-                            <h1></h1>
-                        </div>
-                        <div class="details">
-                            <div class="approved">
-                                <img src=".approved.jpg" alt="" />
-                            </div>
-                            <div class="text">
-                                <span>205/55 R16 H</span>
-                                <span>SUV</span>
-                            </div>
-                            <div class="text">
-                                <div class="icon">
-                                    <span>Stock </span>
-                                    <img src="./green.png" alt="" />
-                                </div>
-                                <span>Price ₪340</span>
-                            </div>
-                            <div class="text">
-                                <span>Total</span>
-                                <span class="bold">₪1360</span>
-                            </div>
-                        </div>
-                        <div class="quantity">
-                            <div class="counter">
-                                <span class="incre">-</span>
-                                <span class="number">4</span>
-                                <span class="incre">+</span>
-                            </div>
+const ProductHero = (props) => {
 
-                            <div class="adc">
-                                <img src="./adc.png" id="adc" alt="" />
-                                <span>Add to cart</span>
+    const { name, id, stock, price, approved, vehicleType } = props.product
+    const { quantity, total } = props;
+    console.log(props);
+    return (
+        <div className='col-md-6'>
+            <div className='m-3' id='hero-container'>
+                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                    <div id='hero-image' className='mr-5'>
+                        <img src='./tyre.jpg' />
+                    </div>
+                    <div className='hero-details'>
+                        <div className='hero-name'>
+                            {name}
+                        </div>
+                        <div className='hero-specs'>
+                            {
+                                approved ?
+                                    <img src='./approved.jpg' />
+                                    :
+                                    'Not approved'
+                            }
+                            <div>
+                                {id}
+                                <p>
+                                    {vehicleType}
+                                </p>
+                            </div>
+                            <div>
+                                {props.stockRemaining(stock)}
+                                <p>
+                                    Price ₪ {price}
+                                </p>
+                            </div>
+                            <div>
+                                Total
+                            <p>
+                                    {total}
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        
+        </div>
+
     );
 }
 

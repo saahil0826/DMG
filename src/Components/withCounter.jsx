@@ -1,4 +1,5 @@
 import React from 'react';
+import { Warning, Error, CheckCircle } from '@material-ui/icons';
 
 const withCounter = (Product) => {
     class ProductWithCounter extends React.Component{
@@ -8,7 +9,7 @@ const withCounter = (Product) => {
                 quantity: 0,
                 total : 0,
                 price : this.props.product.price || 99
-            }
+            } 
         }
 
         // increase
@@ -40,7 +41,9 @@ const withCounter = (Product) => {
                     <React.Fragment>
                         <div class="icon">
                             <span> Stock </span>
-                            <img src="green.png" alt="" />
+                            <CheckCircle fontSize='small' 
+                                style = {{color : 'green'}}
+                            />
                         </div>
                     </React.Fragment>
     
@@ -51,7 +54,9 @@ const withCounter = (Product) => {
                     <React.Fragment>
                         <div class="icon">
                             <span> Stock </span>
-                            <img src="yellow.png" alt="" />
+                            <Warning fontSize='small' 
+                                style = {{color : 'yellow'}}
+                            />
                         </div>
                         <span>
                             Only {stock} left!
@@ -65,7 +70,9 @@ const withCounter = (Product) => {
                     <React.Fragment>
                         <div class="icon">
                             <span> Stock </span>
-                            <img src="red.png" alt="" />
+                            <Error fontSize='small' 
+                                style = {{color : 'red'}}
+                            />
                         </div>
                         <span>
                             None left!

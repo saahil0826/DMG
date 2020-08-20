@@ -6,10 +6,10 @@ import Header from './HeaderComponent';
 class Main extends React.Component{
     render(){
         return(
-            <React.Fragment>
+            <div className = 'container-fluid'>
                 <Header/>
                 <Home/>
-            </React.Fragment>
+            </div>
         )
     }
 }
